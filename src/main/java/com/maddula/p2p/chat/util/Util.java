@@ -1,18 +1,11 @@
 package com.maddula.p2p.chat.util;
 
-import java.util.UUID;
-
 import io.vertx.core.AsyncResult;
 import io.vertx.core.Vertx;
 import io.vertx.core.eventbus.Message;
 import io.vertx.core.json.JsonObject;
 
 public class Util {
-	
-	public static String generateUniqueAddress() {
-		return UUID.randomUUID().toString();
-	}
-	
 	
 	public static String generateChannelAddress(String from, String to) {
 		return new StringBuffer("chat.channel.from.")
